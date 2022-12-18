@@ -1,0 +1,395 @@
+/* livvic-regular - latin */
+@font-face {
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/livvic-v13-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/livvic-v13-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* livvic-500 - latin */
+@font-face {
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""), url("../fonts/livvic-v13-latin-500.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/livvic-v13-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* livvic-600 - latin */
+@font-face {
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  src: local(""), url("../fonts/livvic-v13-latin-600.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/livvic-v13-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* livvic-700 - latin */
+@font-face {
+  font-family: "Livvic-bold";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""),
+    url("../fonts/fonts/livvic-v13-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/fonts/livvic-v13-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+:root {
+  /* COLORS */
+  --primary-bg-midnight-color: #014e56;
+  --primary-bg-light-color: #f67e7e;
+  --primary-bg-white-color: #e1e1e1;
+
+  --secondary-bg-rapture-color: #79c8c7;
+  --secondary-bg-police-color: #2c6269;
+  --secondary-bg-jungle-color: #004047;
+  --secondary-bg-sacramento-color: #012f34;
+  --secondary-bg-dark-color: #002529;
+
+  /* FONTS */
+  --main-font-family: "Livvic-bold", sans-serif;
+  --main-font-size1: 1.8rem;
+  --main-font-size2: 1.5rem;
+  --main-font-weight-2: 700;
+  --main-font-weight-1: 600;
+  --main-line-hieght-1: 1.56;
+  --main-line-hieght-2: 1.67;
+
+  --h1-large-size: 10rem;
+  --h1-large-line-height: 1;
+  --h1-small-size: 6.4rem;
+  --h1-small-line-height: 0, 88;
+
+  --h2-size: 4.8rem;
+  --h2-line-height: 1;
+  --h3-size: 1.8rem;
+  --h3-line-height: 1.56;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  font-size: 62.5%;
+  /* scroll-behavior: smooth; */
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+img {
+  display: flex;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--main-font-family);
+  font-weight: var(--main-font-weight);
+  font-size: var(--main-font-size1);
+  line-height: 1.24;
+  height: 100%;
+  background-color: var(--primary-bg-midnight-color);
+  color: var(--primary-bg-white-color);
+}
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  border: 2px solid var(--primary-bg-white-color);
+  border-radius: 2.4rem;
+  padding: 9px 32px 11px;
+  line-height: 1.24;
+  font-size: var(--main-font-size1);
+  display: inline-block;
+}
+.btn-light {
+  background-color: inherit;
+  color: var(--primary-bg-white-color);
+}
+
+.btn-light:hover {
+  background-color: var(--primary-bg-white-color);
+  color: var(--secondary-bg-dark-color);
+}
+
+.header {
+  padding-top: 7.7rem;
+}
+.header__container {
+  align-items: center;
+  display: flex;
+}
+
+.logo-link {
+  margin-right: 8rem;
+}
+.logo-link__img {
+}
+.sitenav {
+  margin-right: auto;
+}
+.sitenav__list {
+  display: flex;
+}
+.sitenav__item {
+}
+.sitenav__link {
+  font-family: "Livvic", sans-serif;
+  font-weight: var(--main-font-weight);
+  color: var(--primary-bg-white-color);
+}
+.sitenav__item:not(:last-child) {
+  margin-right: 4rem;
+}
+.header__btn {
+  transition: 0.4s;
+}
+
+.main {
+}
+.hero {
+  background-image: url("../images/Group\ 8.svg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  padding-top: 12.4rem;
+  padding-bottom: 12rem;
+}
+.hero_container {
+  /* align-items: center; */
+  justify-content: space-between;
+  display: flex;
+}
+.hero__title--wrapper {
+  width: 350px;
+}
+.hero__title {
+  font-family: "Livvic", sans-serif;
+  font-weight: var(--main-font-weight-1);
+  font-size: 64px;
+  padding-top: 2rem;
+}
+.hero__info {
+  font-weight: var(--main-font-weight-1);
+  width: 730px;
+}
+.hero__devider {
+  margin-bottom: 4rem;
+  border: none;
+}
+.site-devider {
+  width: 5rem;
+  height: 4px;
+  background-color: var(--primary-bg-light-color);
+}
+.hero__description {
+  font-family: "Livvic", sans-serif;
+  font-weight: 600;
+}
+/* DIRECTORS */
+.director {
+  background-color: var(--secondary-bg-jungle-color);
+  background-image: url("../images/director_bg_top.svg"),
+    url("../images/directors-bg_bottom.svg");
+  background-repeat: no-repeat;
+  background-position: left 0 top 0, bottom 0 right 0;
+}
+.director__container {
+  text-align: center;
+  padding-top: 14rem;
+  padding-bottom: 14rem;
+}
+
+.director__title {
+  padding-bottom: 6.4rem;
+  font-size: var(--h2-size);
+}
+.director__items--wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px 30px;
+}
+.director__item {
+  text-align: center;
+  position: relative;
+  padding-top: 3.2rem;
+  padding-bottom: 5.6rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  width: 350px;
+  background-color: var(--secondary-bg-sacramento-color);
+}
+.director__img {
+  margin-left: 2.3rem;
+}
+.director__name {
+  color: var(--secondary-bg-rapture-color);
+  padding-bottom: 8px;
+  padding-top: 1.6rem;
+  font-weight: var(--main-font-weight-2);
+  font-size: var(--h3-size);
+}
+.director__info {
+  font-style: italic;
+  font-weight: 500;
+  font-size: var(--main-font-size2);
+  line-height: 1.33;
+}
+.director__plus {
+  position: absolute;
+  margin-top: 2.8rem;
+  margin-left: 5rem;
+}
+.director__link--wrapper {
+  padding-top: 2.4rem;
+  justify-content: center;
+  display: flex;
+  gap: 1.6rem;
+}
+.director__link {
+}
+
+.plus {
+  position: absolute;
+}
+/* CLIENT */
+
+.client {
+  background-image: url("../images/client__background.svg");
+  background-repeat: no-repeat;
+  background-position: top 0 left 0;
+  background-color: var(--secondary-bg-sacramento-color);
+}
+.client__container {
+  padding-top: 14rem;
+  padding-bottom: 15rem;
+  align-items: center;
+  text-align: center;
+}
+
+.client__title {
+  padding-bottom: 7rem;
+  font-weight: var(--main-font-weight-2);
+  font-size: var(--h2-size);
+}
+.client__list {
+  gap: 7.9rem;
+  display: flex;
+}
+.client__item {
+}
+.client__name {
+}
+
+/* READY */
+
+.ready {
+  background-image: url("../images/burchak.svg");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-color: var(--primary-bg-light-color);
+  padding-top: 7.6rem;
+  padding-bottom: 7.6rem;
+}
+.ready__container {
+}
+
+.ready__info--wrapper {
+  display: flex;
+}
+.ready__title {
+  padding-left: 12rem;
+  color: var(--secondary-bg-sacramento-color);
+  font-weight: var(--main-font-weight-2);
+  font-size: 4.8rem;
+  line-height: 1;
+  padding-right: 26rem;
+}
+.ready__btn {
+  transition: 0.3s;
+  color: var(--secondary-bg-sacramento-color);
+  border-color: var(--secondary-bg-sacramento-color);
+}
+
+.ready__btn:hover {
+  background-color: var(--primary-bg-white-color);
+  color: var(--secondary-bg-dark-color);
+}
+
+/* footer */
+
+.footer {
+  background-color: #002529;
+}
+
+.footer__container {
+  display: flex;
+
+  padding-top: 4.8rem;
+  padding-bottom: 4.8rem;
+}
+
+.left-blok {
+}
+.footer__sn {
+  padding-top: 2.5rem;
+}
+
+.footer__list {
+}
+.footer__center {
+  padding-left: 12rem;
+  padding-right: 30rem;
+}
+.footer__line {
+}
+.footer__text {
+  font-family: "Livvic";
+  opacity: 60%;
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+.footer__right {
+  padding-left: 10rem;
+}
+.footer__social {
+  text-align: right;
+  padding-bottom: 5.1rem;
+}
+.footer__social-link {
+  padding-left: 1.6rem;
+}
+.footer__social-img {
+}
+.footer__social-link:hover path {
+  fill: #f67e7e;
+}
